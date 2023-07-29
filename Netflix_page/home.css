@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Netflix-Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contains;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo img{
+    width: 150px;
+    margin: 5px 20px;
+}
+.navitems{
+    margin: 20px 0px;
+}
+.navitems .right{
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+#languages{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.header-contain{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    
+}
+.header-contain h1{
+    font-size: 45px;
+    line-height: 70px;
+}
+.header-contain h4{
+    font-size: 25px;
+    line-height: 40px;
+}
+.header-contain p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.form{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+
+}
+.form input{
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    margin: 0px 5px;
+    border: 1px solid white;
+}
+.form .btn{
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+hr{
+    border: 4px solid grey;
+}
+h1{
+    font-size: 45px;
+    line-height: 70px;
+ }
+ p{
+    font-size: 25px;
+ }
+.feature1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 50px;
+ }
+ .feature1-right img{
+    height: 300px;
+ }
+ .feature1>div{
+    width: 35%;
+ }
+
+ .feature2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 70px;
+ }
+ .feature2-left img{
+    height: 300px;
+ }
+ .feature2>div{
+    width: 35%;
+ }
+ .query h1{
+    text-align: center;
+ }
+ .query{
+    padding: 20px 200px;
+    font-size: 20px;
+}
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 1px 20px;
+    border: none;
+    background:#303030;
+}
+.faq h3{
+    margin: 20px;  
+}
+
+  .footer{
+    padding: 50px 200px;
+    color:rgb(135, 133, 133);
+  }
+  .footer h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+  }
+  .footer .col{
+    display: grid;    
+    grid-template-columns: 2.5fr 2.5fr 2.5fr;
+    align-items: stretch;
+
+  }
+  .footer .col li{
+    list-style: none;
+    font-size: 20px;
+  }
+  .footer .col li a{
+    display: block;
+    text-decoration: none;
+    color:rgb(135, 133, 133);
+  }
+  @media (max-width:700px) {
+    .feature1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+  }
